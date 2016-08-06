@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -187,16 +187,8 @@
     <Compile Include="Utilities\Util.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\src\EntityFramework7.Npgsql.Design\EntityFramework7.Npgsql.Design.csproj">
-      <Project>{8edced17-2d1d-45be-9b61-0f715876da94}</Project>
-      <Name>EntityFramework7.Npgsql.Design</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\src\EntityFramework7.Npgsql\EntityFramework7.Npgsql.csproj">
-      <Project>{fadda2d1-03b4-4def-8d24-dd1ca4e81f4a}</Project>
-      <Name>EntityFramework7.Npgsql</Name>
-    </ProjectReference>
     <ProjectReference Include="..\EntityFramework7.Npgsql.FunctionalTests\EntityFramework7.Npgsql.FunctionalTests.csproj">
-      <Project>{05a7d0b7-4ae1-4bc8-a1be-2389f1593b2d}</Project>
+      <Project>{05A7D0B7-4AE1-4BC8-A1BE-2389F1593B2D}</Project>
       <Name>EntityFramework7.Npgsql.FunctionalTests</Name>
     </ProjectReference>
   </ItemGroup>
